@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <title>My AngularJS App</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular-route.min.js"></script>
+    <!-- <script type="text/javascript" src="controller.js"></script> -->
+    <script type="text/javascript" src="script3.js"></script>
+  </head>
+  <body ng-app="mainApp" ng-controller="app">
+ <!-- providers are head of factories and services. -->
+ <!-- {{greetMessage}} -->
+
+
+ <!-- ng directive creates if else kind of thing -->
+ <button ng-click="toggle()">Toggle Message</button>
+ <div id="message" ng-show="show == 'msg1'">
+   this is my message 1
+ </div>
+ <div id="message" ng-show="show == 'msg2'">
+   this is my message 2
+ </div>
+  </body>
+</html>

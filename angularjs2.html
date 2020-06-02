@@ -1,0 +1,25 @@
+<!--Model= how applications behave with data
+View=whatever visible to user
+Controller= The coding whcih acts between model and view!-->
+<!doctype html>
+<html ng-app="">
+  <head>
+    <title>My AngularJS App</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+  </head>
+  <body>
+  	<!--filters!-->
+  Your name: <input type="text" ng-model="name"><br>
+	{{'Welcome '+ name | uppercase }}
+	{{'Welcome '+ name | lowercase }}<br>
+	Currency: <input type="text" ng-model="price"><br>
+	Currency {{price | currency }}
+	Currency {{price | currency:"Rs.":0 }} <!-- 0 decimal places!-->
+	<!--ng-includes helps to split your code
+		allows you to keep your code in other files
+		makes ajax request 
+		you have to run on localhost for this!-->
+		<div ng-include="'dummyfile.html'"></div>
+
+  </body>
+</html>

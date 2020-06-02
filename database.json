@@ -1,0 +1,19 @@
+{
+	"records:": [
+		{
+			"Name": "Shahtaj",
+			"Age": "18",
+			"FavColor": "orange"
+		},
+		{
+			"Name":"Ali",
+			"Age":"77",
+			"FavColor": "black"
+		},
+		{
+			"Name": "Alex",
+			"Age":"27",
+			"FavColor": "red"
+		}
+]
+}

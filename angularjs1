@@ -1,0 +1,41 @@
+<!doctype html>
+<html ng-app="">
+  <head>
+    <title>My AngularJS App</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+  </head>
+  <body>
+  	<!--ng is used for angular
+  		anuglar is an object I received from library
+  		ng-app is important for processing angular!-->
+  	<input type="text" ng-model="name">
+  	<div>Hello {{name}}</div>
+  	<div ng-bind="name"></div>
+  	<div ng-model="name" contenteditable="true">
+  	<!--ng-bind=binds your data in html
+  		and use them dynamically with html
+  		angular js extends html functionality 
+  		directives are attributes starting
+  		from ng
+  		ng-model only works with specific
+  		input types (textarea/select)!-->
+
+  		<!--{{name}} this is called expressions {{10+10}}
+  			ng-init allows you to store data in html like storing
+  			variables in js!-->
+  			<div ng-init="language='AngularJS'">
+  			Your preferred language: <input type="text" ng-model="language">
+  				{{language}}
+  			
+  			</div>
+
+  			<!--ng-repeat is another directive which loops the data
+  				!-->
+  		<div ng-init="myFavLan=[{name: 'PHP', extension: '.php'}, {name: 'Javascript', extension:'.js'},{name: 'Ruby', extension:'.rb'}, {name: 'C++', extension: '.cpp'}]">
+  		<p ng-repeat="language1 in myFavLan">
+  			Name: {{ language1.name}}<br>
+  			Extension: {{language1.extension}}
+  		</p>		
+  		</div>
+  </body>
+</html>
